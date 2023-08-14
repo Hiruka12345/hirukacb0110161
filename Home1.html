@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS1/navbar.css">
+    <link rel="stylesheet" href="./CSS1/main.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+    </div>
+    <section>
+        <div class="container-info">
+            <h1>Buy Tickets</h1>
+            <div class="fbt">
+                <div class="container">
+                    <form action="" method="post">
+                        <div class="row1" style="display: flex;">
+                            <div style="padding: 10px 20px;">
+                                <label for="">Select Date</label><br />
+                                <input type="date" name="date" id="date">
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <label for="">Select Time</label><br />
+                                <input type="time" name="time" id="time">
+                            </div>
+                        </div>
+                        <div class="row1" style="display: flex;">
+                            <div style="padding: 10px 20px;">
+                                <label for="">Sri Lankan Adult</label><br />
+                                <input type="number" name="slA" id="slA">
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <label for="">Sri Lankan Child</label><br />
+                                <input type="number" name="slC" id="slC">
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <label for="">Foreigner Adult</label><br />
+                                <input type="number" name="fA" id="fA">
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <label for="">Foreigner Child</label><br />
+                                <input type="number" name="fC" id="fC">
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <label for="">Infant</label><br />
+                                <input type="number" name="iF" id="iF">
+                            </div>
+                        </div>
+                        <div>
+                            
+                            <div class="input-group">
+                                <label for="duration">Select duration:</label>
+                                <select id="duration">
+                                    <option value="07:00-08:00">07:00-08:00</option>
+                                    <option value="08:00-09:00">08:00-09:00</option>
+                                    <option value="09:00-10:00">09:00-10:00</option>
+                                    <option value="10:00-11:00">10:00-11:00 (peak)</option>
+                                    <option value="12:00-13:00">12:00-01:00 (peak)</option>
+                                    <option value="14:00-15:00">02:00-03:00 (peak)</option>
+                                    <option value="15:00-16:00">03:00-04:00 (peak)</option>
+                                    <option value="17:00-18:00">05:00-06:00 (peak)</option>
+                        </div>
+                        <input type="button" name="button" id="btn" value="Total" onclick="AddRow()"
+                            style="margin: 10px 20px;">
+                    </form>
+                </div>
+            </div>
+            <div class="container-main">
+                <table id="show" style="margin: 50px; border: 1px solid black;">
+    
+                    <tr>
+                        <th style="padding: 10px 20px;">Date</th>
+                        <th style="padding: 10px 20px;">Time</th>
+                        <th style="padding: 10px 20px;">Sl Adult</th>
+                        <th style="padding: 10px 20px;">Sl Child</th>
+                        <th style="padding: 10px 20px;">Foreigner Adult</th>
+                        <th style="padding: 10px 20px;">Foreigner Child</th>
+                        <th style="padding: 10px 20px;">Infant</th>
+                        <th style="padding: 10px 20px;">Duration</th>
+                        <th style="padding: 10px 20px;">Total</th>
+
+                    </tr>
+    
+                </table>
+<center>
+                <button class="continue"> <a href="details.html">Continue </button></a>
+            </center>
+                <script src="script.js"></script>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+</body>
+
+</html>
